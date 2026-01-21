@@ -1,121 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shenzhen Sanyu Display Co., Ltd.</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LCD and TFT display module manufacturer for industrial and embedded applications.">
+  <meta charset="UTF-8" />
+  <title>LCD Display Modules | Shenzhen Sanyu Display</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-      color: #222;
-      line-height: 1.6;
-      background-color: #ffffff;
-    }
-    header {
-      background: #0f172a;
-      color: #ffffff;
-      padding: 70px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0 0 12px 0;
-      font-size: 36px;
-      font-weight: 700;
-    }
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
-    section {
-      padding: 50px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      border: 1px solid #e5e7eb;
-      padding: 24px;
-      background: #fafafa;
-    }
-    footer {
-      background: #f3f4f6;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #555;
-    }
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#111827;background:#fff}
+    a{text-decoration:none;color:inherit}
+    .wrap{max-width:1200px;margin:auto;padding:0 18px}
+    nav{background:#0b1220;color:#fff;padding:14px 0;position:sticky;top:0;z-index:999}
+    .navrow{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:800;letter-spacing:.3px}
+    .navlinks{display:flex;gap:16px;align-items:center;font-size:14px}
+    .navlinks a{opacity:.9}
+    .btn{background:#22c55e;color:#0b1220!important;padding:8px 12px;border-radius:8px;font-weight:800;opacity:1!important}
+
+    header{background:#0f172a;color:#fff;padding:36px 0}
+    header h1{margin:0 0 8px;font-size:30px}
+    header p{margin:0;opacity:.9}
+
+    .layout{display:grid;grid-template-columns:320px 1fr;gap:18px;padding:26px 0}
+    @media(max-width:980px){.layout{grid-template-columns:1fr}}
+
+    .panel{border:1px solid #e5e7eb;border-radius:14px;background:#fff}
+    .panel h3{margin:0;padding:14px;border-bottom:1px solid #e5e7eb;font-size:16px}
+    .sec{padding:12px 14px;border-bottom:1px solid #f1f5f9}
+    .sec:last-child{border-bottom:none}
+    .label{font-size:12px;color:#475569;font-weight:800;margin-bottom:8px;text-transform:uppercase}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{font-size:13px;padding:7px 10px;border:1px solid #e5e7eb;border-radius:999px;background:#f8fafc}
+
+    .toolbar{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;font-size:14px;color:#64748b}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:14px}
+
+    .card{border:1px solid #e5e7eb;border-radius:14px;overflow:hidden}
+    .card img{width:100%;height:160px;object-fit:cover;background:#f3f4f6}
+    .pbody{padding:14px}
+    .pname{font-weight:800;margin:6px 0 8px}
+    .spec{font-size:14px;color:#475569;margin:0}
+    .badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+    .badge{font-size:12px;padding:4px 8px;border:1px solid #e5e7eb;border-radius:999px;background:#f8fafc}
+    .actions{display:flex;gap:10px;margin-top:12px}
+    .cta{background:#0f172a;color:#fff;padding:9px 12px;border-radius:10px;font-weight:800;font-size:14px}
+
+    footer{background:#f3f4f6;padding:22px 0;font-size:14px;color:#475569}
+    footer a{font-weight:800;color:#0f172a}
+
   </style>
 </head>
 <body>
-<nav style="background:#0b1220;color:#fff;padding:14px 20px;position:sticky;top:0;z-index:999;">
-  <div style="max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;">
-    <div style="font-weight:700;letter-spacing:.3px;">Shenzhen Sanyu Display</div>
-    <div style="display:flex;gap:16px;align-items:center;font-size:14px;">
-  <a href="index.html" style="color:#fff;text-decoration:none;opacity:.9;">Company</a>
-  <a href="products.html" style="color:#fff;text-decoration:none;opacity:.9;">Products</a>
-  <a href="#contact" style="color:#fff;text-decoration:none;opacity:.9;">Contact</a>
-  <a href="#contact" style="background:#22c55e;color:#0b1220;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;">Get Quote</a>
-</div>
-      <a href="#about" style="color:#fff;text-decoration:none;opacity:.9;">About</a>
-      <a href="products.html" style="color:#fff;text-decoration:none;opacity:.9;">Products</a>
-      <a href="#capability" style="color:#fff;text-decoration:none;opacity:.9;">Capability</a>
-      <a href="#contact" style="color:#fff;text-decoration:none;opacity:.9;">Contact</a>
-      <a href="#contact" style="background:#22c55e;color:#0b1220;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700;">Get Quote</a>
+
+<nav>
+  <div class="wrap navrow">
+    <div class="brand">Shenzhen Sanyu Display</div>
+    <div class="navlinks">
+      <a href="index.html">Company</a>
+      <a href="products.html">Products</a>
+      <a href="index.html#contact">Contact</a>
+      <a class="btn" href="https://wa.me/8615960303958" target="_blank">Get Quote</a>
     </div>
   </div>
 </nav>
 
 <header>
-  <h1>LCD & TFT Display Module Manufacturer</h1>
-  <p>Reliable display solutions for industrial and embedded applications</p>
+  <div class="wrap">
+    <h1>LCD Display Modules</h1>
+    <p>Industrial & embedded TFT / IPS LCD solutions</p>
+  </div>
 </header>
 
-<section>
-  <h2>About Us</h2>
-  <p>
-    Shenzhen Sanyu Display Co., Ltd. is a professional manufacturer specializing in
-    LCD and TFT display modules. We focus on stable quality, consistent performance,
-    and long-term supply for global OEM and ODM customers.
-  </p>
-</section>
+<div class="wrap">
+  <div class="layout">
 
-<section>
-  <h2>Product Categories</h2>
-  <div class="products">
-    <div class="card">Small Size Displays (3.5” / 5”)</div>
-    <div class="card">Medium Size Displays (7” / 10.1”)</div>
-    <div class="card">High Brightness Displays</div>
-    <div class="card">Industrial & Embedded Displays</div>
-  </div>
-</section>
+    <!-- Filters -->
+    <aside class="panel">
+      <h3>Filters</h3>
+      <div class="sec">
+        <div class="label">Size</div>
+        <div class="chips">
+          <span class="chip">3.5"</span>
+          <span class="chip">5"</span>
+          <span class="chip">7"</span>
+          <span class="chip">10.1"</span>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="label">Interface</div>
+        <div class="chips">
+          <span class="chip">MCU</span>
+          <span class="chip">RGB</span>
+          <span class="chip">MIPI</span>
+          <span class="chip">LVDS</span>
+        </div>
+      </div>
+      <div class="sec">
+        <div class="label">Touch</div>
+        <div class="chips">
+          <span class="chip">None</span>
+          <span class="chip">RTP</span>
+          <span class="chip">CTP</span>
+        </div>
+      </div>
+    </aside>
 
-<section>
-  <h2>Manufacturing & Capability</h2>
-  <p>
-    Our production process covers module assembly, bonding, testing, and quality control.
-    We support customization based on interface, brightness, structure, and application requirements.
-  </p>
-</section>
+    <!-- Products -->
+    <main class="panel">
+      <div class="toolbar">
+        <div>Products</div>
+        <div>Request datasheet via WhatsApp</div>
+      </div>
 
-<section>
-  <h2>Contact</h2>
-  <p>Email: sales@sanyudisplay.com</p>
-  <p>Open for technical discussion and long-term cooperation.</p>
-</section>
+      <div class="grid">
 
-<footer>
-  © Shenzhen Sanyu Display Co., Ltd. All rights reserved.
-</footer>
+        <div class="card">
+          <img src="p101.jpg" alt="10.1 inch IPS TFT LCD">
+          <div class="pbody">
+            <div class="pname">10.1” IPS TFT (1200×1920)</div>
+            <p class="spec">MIPI | 350 nits | -20~70°C</p>
+            <div class="badges"><span class="badge">IPS</span><span class="badge">COG</span></div>
+            <div class="actions">
+              <a class="cta" href="https://wa.me/8615960303958" target="_blank">Get Quote</a>
+            </div>
+          </div>
+        </div>
 
-</body>
-</html>
+        <div class="card">
+          <img src="p7.jpg" alt="7 inch IPS TFT LCD">
+          <div class="pbody">
+            <div class="pname">7” IPS TFT (800×1280)</div>
+            <p class="spec">JD9365 | -20~70°C</p>
+            <div class="badges"><span class="badge">IPS</span><span class="badge">800×1280</span></div>
+            <div class="actions">
+              <a class="cta" href="https://wa.me/8615960303958" target="_blank">Get Quote</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="p5.jpg" alt="5 inch TFT LCD">
